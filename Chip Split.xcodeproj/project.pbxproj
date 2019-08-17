@@ -13,6 +13,7 @@
 		D01D7C2B230843F0005614A4 /* Chip_Split.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D01D7C29230843F0005614A4 /* Chip_Split.xcdatamodeld */; };
 		D01D7C2D230843F1005614A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01D7C2C230843F1005614A4 /* Assets.xcassets */; };
 		D01D7C30230843F1005614A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01D7C2E230843F1005614A4 /* LaunchScreen.storyboard */; };
+		D01D7C382308462A005614A4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D7C372308462A005614A4 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D01D7C2C230843F1005614A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D01D7C2F230843F1005614A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D01D7C31230843F1005614A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01D7C372308462A005614A4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D01D7C22230843F0005614A4 /* AppDelegate.swift */,
 				D01D7C24230843F0005614A4 /* ViewController.swift */,
 				D01D7C26230843F0005614A4 /* Main.storyboard */,
+				D01D7C372308462A005614A4 /* PageViewController.swift */,
 				D01D7C2C230843F1005614A4 /* Assets.xcassets */,
 				D01D7C2E230843F1005614A4 /* LaunchScreen.storyboard */,
 				D01D7C31230843F1005614A4 /* Info.plist */,
@@ -141,6 +144,7 @@
 				D01D7C2B230843F0005614A4 /* Chip_Split.xcdatamodeld in Sources */,
 				D01D7C25230843F0005614A4 /* ViewController.swift in Sources */,
 				D01D7C23230843F0005614A4 /* AppDelegate.swift in Sources */,
+				D01D7C382308462A005614A4 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52GURPQBA2;
 				INFOPLIST_FILE = "Chip Split/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52GURPQBA2;
 				INFOPLIST_FILE = "Chip Split/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
