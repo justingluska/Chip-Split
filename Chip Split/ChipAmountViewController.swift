@@ -14,26 +14,24 @@ class ChipAmountViewController: UIViewController {
         
         super.viewDidLoad()
     }
-    let defaults = UserDefaults.standard
     
     @IBOutlet weak var chipTypesLabel: UILabel!
     
     var chipTypes: Int = 1
-    
-    struct defaultsKeys {
-        static let chipTypesGlobal:Int = 1
-    }
-    
     
     
     
     @IBAction func chipTypesStepper(_ sender: UIStepper) {
         chipTypes = Int(sender.value)
         chipTypesLabel.text = "\(chipTypes)"
-        defaults.set(chipTypes, forKey: "Test")
-        defaults.set(passwordTextField.text, forKey: "Password")
     }
-    }
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toType"){
+            let chips = segue.destination as! ChipTypeViewController
+            chips.totalTypes = chipTypes
+        }
     
     
     
@@ -50,9 +48,7 @@ class ChipAmountViewController: UIViewController {
     
     
     
-    
-    
-    
-    
+
+}
 
 }
