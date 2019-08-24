@@ -193,13 +193,49 @@
                     <view key="view" contentMode="scaleToFill" id="uSx-uj-TkS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Players: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Co-PH-LMm">
+                                <rect key="frame" x="87" y="98" width="175" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="hoO-jI-ErM">
+                                <rect key="frame" x="113" y="51" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperClicked:" destination="J9x-1o-OaH" eventType="valueChanged" id="TMP-yn-atg"/>
+                                </connections>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-C3-WpO">
+                                <rect key="frame" x="129" y="161" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="gen"/>
+                                <connections>
+                                    <action selector="generateButton:" destination="J9x-1o-OaH" eventType="touchUpInside" id="Fet-Di-scn"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="placeholder" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwr-NG-pFh">
+                                <rect key="frame" x="40" y="220" width="240" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.64050426800000004" green="0.64684589439999995" blue="0.64684589439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cZb-FR-rTi"/>
                     </view>
+                    <connections>
+                        <outlet property="results" destination="bwr-NG-pFh" id="SJd-R1-yn4"/>
+                        <outlet property="stepper" destination="hoO-jI-ErM" id="a9j-v8-jGM"/>
+                        <outlet property="totalPlayers" destination="7Co-PH-LMm" id="dxQ-Ik-M5D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMD-mr-2or" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3022" y="65"/>
+            <point key="canvasLocation" x="3020.625" y="64.436619718309856"/>
         </scene>
     </scenes>
 </document>

@@ -12,8 +12,24 @@ class ResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    var tPl: Int = 2
+    
+    @IBAction func stepperClicked(_ sender: Any) {
+        tPl = Int(stepper.value)
+        totalPlayers.text = "Total Players: \(tPl)"
+    }
+    
+    @IBOutlet weak var totalPlayers: UILabel!
+    @IBOutlet weak var results: UITextView!
+    
+    @IBAction func generateButton(_ sender: Any) {
+        if(totalTypes == 2){
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH"
+        }
     }
     
     var totalTypes:Int = 0
