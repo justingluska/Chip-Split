@@ -13,6 +13,26 @@ class ChipTypeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateType()
+        confirmChip.isHidden = false
+        continueAd.isHidden = true
+        if(chipNum == totalTypes){
+            confirmChip.isHidden = true
+            continueAd.isHidden = false
+        }
+    }
+    
+    @IBOutlet weak var confirmChip: UIButton!
+    @IBOutlet weak var continueAd: UIButton!
+    @IBOutlet weak var nameInput: UITextField!
+    @IBOutlet weak var valueSlid: UISlider!
+    @IBOutlet weak var quantitySlid: UISlider!
+    
+    func resetTypes(){
+        nameInput.text = ""
+        valueSlid.value = 1
+        quantitySlid.value = 1
+        chipWorthLabel.text = "Value: $1"
+        chipAmountLabel.text = "Quantity: 2 Total Chips"
     }
     
     func updateType(){
@@ -83,8 +103,50 @@ class ChipTypeViewController: UIViewController {
     }
     
     @IBAction func confirmNext(_ sender: Any) {
-        chipNum += 1
-        updateType()
+        if(nameInput.text == ""){
+            let alert = UIAlertController(title: "Error", message: "Please enter a chip color or name", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
+            if(chipNum == 1){
+                chipName1 = "\(nameInput.text ?? "chip1")"
+                print(chipName1)
+            }
+            if(chipNum == 2){
+                chipName2 = "\(nameInput.text ?? "chip2")"
+            }
+            if(chipNum == 3){
+                chipName3 = "\(nameInput.text ?? "chip3")"
+            }
+            if(chipNum == 4){
+                chipName4 = "\(nameInput.text ?? "chip4")"
+            }
+            if(chipNum == 5){
+                chipName5 = "\(nameInput.text ?? "chip5")"
+            }
+            if(chipNum == 6){
+                chipName6 = "\(nameInput.text ?? "chip6")"
+            }
+            if(chipNum == 7){
+                chipName7 = "\(nameInput.text ?? "chip7")"
+            }
+            if(chipNum == 8){
+                chipName8 = "\(nameInput.text ?? "chip8")"
+            }
+            if(chipNum < totalTypes){
+                chipNum += 1
+                updateType()
+                resetTypes()
+                if(chipNum == totalTypes){
+                    confirmChip.isHidden = true
+                    continueAd.isHidden = false
+                }
+            }
+            else{
+                print("we donef")
+            }
+        }
     }
     
     var chipNum:Int = 1
@@ -127,6 +189,44 @@ class ChipTypeViewController: UIViewController {
     var chipAmount8:Int = 0
     var chipQuantity8:Int = 0
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is ResultsViewController
+        {
+            let vc = segue.destination as? ResultsViewController
+            vc?.totalTypes = totalTypes
+            vc?.chipName1 = chipName1
+            vc?.chipAmount1 = chipAmount1
+            vc?.chipQuantity1 = chipQuantity1
+            
+            vc?.chipName2 = chipName2
+            vc?.chipAmount2 = chipAmount2
+            vc?.chipQuantity2 = chipQuantity2
+            
+            vc?.chipName3 = chipName3
+            vc?.chipAmount3 = chipAmount3
+            vc?.chipQuantity3 = chipQuantity3
+            
+            vc?.chipName4 = chipName4
+            vc?.chipAmount4 = chipAmount4
+            vc?.chipQuantity4 = chipQuantity4
+            
+            vc?.chipName5 = chipName5
+            vc?.chipAmount5 = chipAmount5
+            vc?.chipQuantity5 = chipQuantity5
+            
+            vc?.chipName6 = chipName6
+            vc?.chipAmount6 = chipAmount6
+            vc?.chipQuantity6 = chipQuantity6
+            
+            vc?.chipName7 = chipName7
+            vc?.chipAmount7 = chipAmount7
+            vc?.chipQuantity7 = chipQuantity7
+            
+            vc?.chipName8 = chipName8
+            vc?.chipAmount8 = chipAmount8
+            vc?.chipQuantity8 = chipQuantity8
+        }
+    }
     
 }

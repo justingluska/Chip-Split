@@ -175,6 +175,11 @@
                         <outlet property="chipAmountLabel" destination="s94-QQ-PyV" id="G1K-Hi-Bq6"/>
                         <outlet property="chipTypeNumberLabel" destination="TzN-TX-LZd" id="B7S-3L-aPv"/>
                         <outlet property="chipWorthLabel" destination="WsT-80-fBI" id="H2A-ox-JK8"/>
+                        <outlet property="confirmChip" destination="4um-Gd-FMZ" id="P5B-c2-ytb"/>
+                        <outlet property="continueAd" destination="V2J-Sa-sjd" id="rXk-L8-ZqY"/>
+                        <outlet property="nameInput" destination="Rbk-bh-9Uh" id="Thl-Lh-p6K"/>
+                        <outlet property="quantitySlid" destination="qjB-c8-DZC" id="B8i-fZ-nkr"/>
+                        <outlet property="valueSlid" destination="UqK-g9-I3P" id="q4W-bd-9t4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zl4-IW-2JR" userLabel="First Responder" sceneMemberID="firstResponder"/>
