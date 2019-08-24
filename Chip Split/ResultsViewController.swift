@@ -14,24 +14,6 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBOutlet weak var stepper: UIStepper!
-    
-    var tPl: Int = 2
-    
-    @IBAction func stepperClicked(_ sender: Any) {
-        tPl = Int(stepper.value)
-        totalPlayers.text = "Total Players: \(tPl)"
-    }
-    
-    @IBOutlet weak var totalPlayers: UILabel!
-    @IBOutlet weak var results: UITextView!
-    
-    @IBAction func generateButton(_ sender: Any) {
-        if(totalTypes == 2){
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH"
-        }
-    }
-    
     var totalTypes:Int = 0
     
     var chipName1:String = ""
@@ -65,5 +47,23 @@ class ResultsViewController: UIViewController {
     var chipName8:String = ""
     var chipAmount8:Int = 0
     var chipQuantity8:Int = 0
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    var tPl: Int = 2
+    
+    @IBAction func stepperClicked(_ sender: Any) {
+        tPl = Int(stepper.value)
+        totalPlayers.text = "Total Players: \(tPl)"
+    }
+    
+    @IBOutlet weak var totalPlayers: UILabel!
+    @IBOutlet weak var results: UITextView!
+    
+    @IBAction func generateButton(_ sender: Any) {
+        if(totalTypes == 2){
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2) CHIPS EACH"
+        }
+    }
 
 }

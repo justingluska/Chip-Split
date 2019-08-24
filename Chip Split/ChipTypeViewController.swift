@@ -115,6 +115,7 @@ class ChipTypeViewController: UIViewController {
             }
             if(chipNum == 2){
                 chipName2 = "\(nameInput.text ?? "chip2")"
+                print(chipName2)
             }
             if(chipNum == 3){
                 chipName3 = "\(nameInput.text ?? "chip3")"
