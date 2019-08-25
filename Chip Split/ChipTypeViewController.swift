@@ -136,16 +136,15 @@ class ChipTypeViewController: UIViewController {
                 chipName8 = "\(nameInput.text ?? "chip8")"
             }
             if(chipNum < totalTypes){
-                chipNum += 1
                 updateType()
                 resetTypes()
+                chipNum += 1
+            }
+            else{
                 if(chipNum == totalTypes){
                     confirmChip.isHidden = true
                     continueAd.isHidden = false
                 }
-            }
-            else{
-                print("we donef")
             }
         }
     }
@@ -156,39 +155,39 @@ class ChipTypeViewController: UIViewController {
     @IBOutlet weak var chipTypeNumberLabel: UILabel!
     @IBOutlet weak var chipAmountLabel: UILabel!
     
-    var totalTypes:Int = 0
+    var totalTypes:Int = 1
     
     var chipName1:String = ""
-    var chipAmount1:Int = 0
-    var chipQuantity1:Int = 0
+    var chipAmount1:Int = 1
+    var chipQuantity1:Int = 2
     
     var chipName2:String = ""
-    var chipAmount2:Int = 0
-    var chipQuantity2:Int = 0
+    var chipAmount2:Int = 1
+    var chipQuantity2:Int = 2
     
     var chipName3:String = ""
-    var chipAmount3:Int = 0
-    var chipQuantity3:Int = 0
+    var chipAmount3:Int = 1
+    var chipQuantity3:Int = 2
     
     var chipName4:String = ""
-    var chipAmount4:Int = 0
-    var chipQuantity4:Int = 0
+    var chipAmount4:Int = 1
+    var chipQuantity4:Int = 2
     
     var chipName5:String = ""
-    var chipAmount5:Int = 0
-    var chipQuantity5:Int = 0
+    var chipAmount5:Int = 1
+    var chipQuantity5:Int = 2
     
     var chipName6:String = ""
-    var chipAmount6:Int = 0
-    var chipQuantity6:Int = 0
+    var chipAmount6:Int = 1
+    var chipQuantity6:Int = 2
     
     var chipName7:String = ""
-    var chipAmount7:Int = 0
-    var chipQuantity7:Int = 0
+    var chipAmount7:Int = 1
+    var chipQuantity7:Int = 2
     
     var chipName8:String = ""
-    var chipAmount8:Int = 0
-    var chipQuantity8:Int = 0
+    var chipAmount8:Int = 1
+    var chipQuantity8:Int = 2
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
