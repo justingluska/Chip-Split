@@ -64,14 +64,14 @@ class ResultsViewController: UIViewController {
         if(totalTypes == 1){
             var totalValue:Int = 1
             totalValue = chipQuantity1 * chipAmount1
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\nTOTAL VALUE: \(totalValue)"
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\nINDIVIDUAL VALUE: \(totalValue)"
         }
         if(totalTypes == 2){
             var totalValue:Int = 1
             totalValue = chipQuantity1 * chipAmount1
             totalValue = (totalValue) + chipQuantity2 * chipAmount2
             totalValue = totalValue / tPl
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH \n\nTOTAL VALUE: $\(totalValue)"
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
         }
         if(totalTypes == 3){
             var totalValue:Int = 1
@@ -79,7 +79,7 @@ class ResultsViewController: UIViewController {
             totalValue = (totalValue) + chipQuantity2 * chipAmount2
             totalValue = (totalValue) + chipQuantity3 * chipAmount3
             totalValue = totalValue / tPl
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH \n\nTOTAL VALUE: $\(totalValue)"
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
         }
         if(totalTypes == 4){
             var totalValue:Int = 1
@@ -88,9 +88,54 @@ class ResultsViewController: UIViewController {
             totalValue = (totalValue) + chipQuantity3 * chipAmount3
             totalValue = (totalValue) + chipQuantity4 * chipAmount4
             totalValue = totalValue / tPl
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH\n\(chipQuantity4/tPl) \(chipName4.uppercased()) CHIPS EACH \n\nTOTAL VALUE: $\(totalValue)"
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH\n\(chipQuantity4/tPl) \(chipName4.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
         }
-        
+        if(totalTypes == 5){
+            var totalValue:Int = 1
+            totalValue = chipQuantity1 * chipAmount1
+            totalValue = (totalValue) + chipQuantity2 * chipAmount2
+            totalValue = (totalValue) + chipQuantity3 * chipAmount3
+            totalValue = (totalValue) + chipQuantity4 * chipAmount4
+            totalValue = (totalValue) + chipQuantity5 * chipAmount5
+            totalValue = totalValue / tPl
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH\n\(chipQuantity4/tPl) \(chipName4.uppercased()) CHIPS EACH\n\(chipQuantity5/tPl) \(chipName5.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
+        }
+        if(totalTypes == 6){
+            var totalValue:Int = 1
+            totalValue = chipQuantity1 * chipAmount1
+            totalValue = (totalValue) + chipQuantity2 * chipAmount2
+            totalValue = (totalValue) + chipQuantity3 * chipAmount3
+            totalValue = (totalValue) + chipQuantity4 * chipAmount4
+            totalValue = (totalValue) + chipQuantity5 * chipAmount5
+            totalValue = (totalValue) + chipQuantity6 * chipAmount6
+            totalValue = totalValue / tPl
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH\n\(chipQuantity4/tPl) \(chipName4.uppercased()) CHIPS EACH\n\(chipQuantity5/tPl) \(chipName5.uppercased()) CHIPS EACH\n\(chipQuantity6/tPl) \(chipName6.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
+        }
+        if(totalTypes == 7){
+            var totalValue:Int = 1
+            totalValue = chipQuantity1 * chipAmount1
+            totalValue = (totalValue) + chipQuantity2 * chipAmount2
+            totalValue = (totalValue) + chipQuantity3 * chipAmount3
+            totalValue = (totalValue) + chipQuantity4 * chipAmount4
+            totalValue = (totalValue) + chipQuantity5 * chipAmount5
+            totalValue = (totalValue) + chipQuantity6 * chipAmount6
+            totalValue = (totalValue) + chipQuantity7 * chipAmount7
+            totalValue = totalValue / tPl
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH\n\(chipQuantity4/tPl) \(chipName4.uppercased()) CHIPS EACH\n\(chipQuantity5/tPl) \(chipName5.uppercased()) CHIPS EACH\n\(chipQuantity6/tPl) \(chipName6.uppercased()) CHIPS EACH\n\(chipQuantity7/tPl) \(chipName7.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
+        }
+        if(totalTypes == 8){
+            var totalValue:Int = 1
+            totalValue = chipQuantity1 * chipAmount1
+            totalValue = (totalValue) + chipQuantity2 * chipAmount2
+            totalValue = (totalValue) + chipQuantity3 * chipAmount3
+            totalValue = (totalValue) + chipQuantity4 * chipAmount4
+            totalValue = (totalValue) + chipQuantity5 * chipAmount5
+            totalValue = (totalValue) + chipQuantity6 * chipAmount6
+            totalValue = (totalValue) + chipQuantity7 * chipAmount7
+            totalValue = (totalValue) + chipQuantity8 * chipAmount8
+            totalValue = totalValue / tPl
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH\n\(chipQuantity4/tPl) \(chipName4.uppercased()) CHIPS EACH\n\(chipQuantity5/tPl) \(chipName5.uppercased()) CHIPS EACH\n\(chipQuantity6/tPl) \(chipName6.uppercased()) CHIPS EACH\n\(chipQuantity7/tPl) \(chipName7.uppercased()) CHIPS EACH\n\(chipQuantity8/tPl) \(chipName8.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
+        }
         
     }
 

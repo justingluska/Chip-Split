@@ -36,11 +36,8 @@ class ChipTypeViewController: UIViewController {
     }
     
     func updateType(){
-        if(chipNum < 7){
+        if(chipNum < 9){
             chipTypeNumberLabel.text = "Chip Type: \(chipNum) of \(totalTypes)"
-        }
-        if(chipNum == 8){
-            print("Done")
         }
     }
     
