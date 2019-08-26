@@ -12,7 +12,7 @@ class ChipTypeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateType()
+        chipTypeNumberLabel.text = "Chip Type: \(chipNum) of \(totalTypes)"
         confirmChip.isHidden = false
         continueAd.isHidden = true
         if(chipNum == totalTypes){
@@ -37,7 +37,7 @@ class ChipTypeViewController: UIViewController {
     
     func updateType(){
         if(chipNum < 9){
-            chipTypeNumberLabel.text = "Chip Type: \(chipNum) of \(totalTypes)"
+            chipTypeNumberLabel.text = "Chip Type: \(chipNum + 1) of \(totalTypes)"
         }
     }
     
@@ -106,6 +106,7 @@ class ChipTypeViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         else{
+            updateType()
             if(chipNum == 1){
                 chipName1 = "\(nameInput.text ?? "chip1")"
                 print(chipName1)
@@ -132,9 +133,8 @@ class ChipTypeViewController: UIViewController {
             if(chipNum == 8){
                 chipName8 = "\(nameInput.text ?? "chip8")"
             }
+            resetTypes()
             if(chipNum < totalTypes){
-                updateType()
-                resetTypes()
                 chipNum += 1
             }
             else{

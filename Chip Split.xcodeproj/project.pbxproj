@@ -16,6 +16,7 @@
 		D01D7C3C23085341005614A4 /* ChipAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D7C3B23085341005614A4 /* ChipAmountViewController.swift */; };
 		D01D7C3E2308535B005614A4 /* ChipTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D7C3D2308535B005614A4 /* ChipTypeViewController.swift */; };
 		D01D7C40230853F3005614A4 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D7C3F230853F3005614A4 /* ResultsViewController.swift */; };
+		D06C9892231332B6004AA574 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = D06C9891231332B6004AA574 /* title.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D01D7C3B23085341005614A4 /* ChipAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipAmountViewController.swift; sourceTree = "<group>"; };
 		D01D7C3D2308535B005614A4 /* ChipTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipTypeViewController.swift; sourceTree = "<group>"; };
 		D01D7C3F230853F3005614A4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		D06C9891231332B6004AA574 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				D01D7C3D2308535B005614A4 /* ChipTypeViewController.swift */,
 				D01D7C3B23085341005614A4 /* ChipAmountViewController.swift */,
 				D01D7C3923085311005614A4 /* StartViewController.swift */,
+				D06C9891231332B6004AA574 /* title.png */,
 				D01D7C2C230843F1005614A4 /* Assets.xcassets */,
 				D01D7C2E230843F1005614A4 /* LaunchScreen.storyboard */,
 				D01D7C31230843F1005614A4 /* Info.plist */,
@@ -136,6 +139,7 @@
 			files = (
 				D01D7C30230843F1005614A4 /* LaunchScreen.storyboard in Resources */,
 				D01D7C2D230843F1005614A4 /* Assets.xcassets in Resources */,
+				D06C9892231332B6004AA574 /* title.png in Resources */,
 				D01D7C28230843F0005614A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,11 +12,14 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        startButton.layer.cornerRadius = 15
+        helpButton.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var helpButton: UIButton!
+    
     /*
     // MARK: - Navigation
 

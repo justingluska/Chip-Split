@@ -18,23 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY3-fA-Hji">
-                                <rect key="frame" x="137" y="485" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="MB9-Pw-R8Z">
+                                <rect key="frame" x="40" y="144" width="240" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="r03-Vs-urU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8l-lh-4kw">
+                                <rect key="frame" x="50" y="477" width="220" height="61"/>
+                                <color key="backgroundColor" red="0.60931551399999995" green="0.50913956319999998" blue="0.35865937609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="42"/>
+                                <state key="normal" title="Help">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY3-fA-Hji">
+                                <rect key="frame" x="50" y="396" width="220" height="61"/>
+                                <color key="backgroundColor" red="0.60931551395939088" green="0.50913956320211673" blue="0.35865937609289261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="42"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="gFj-HI-ELe"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.8980392157" green="0.56668728759900511" blue="0.24065685831393871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83125793147208116" green="0.62321664029737345" blue="0.32724244257798152" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r8l-lh-4kw" firstAttribute="top" secondItem="CY3-fA-Hji" secondAttribute="bottom" constant="20" id="4t5-4g-0dd"/>
+                            <constraint firstItem="x9u-7K-LoO" firstAttribute="trailing" secondItem="CY3-fA-Hji" secondAttribute="trailing" constant="50" id="6Xr-TM-BIB"/>
+                            <constraint firstItem="r8l-lh-4kw" firstAttribute="leading" secondItem="x9u-7K-LoO" secondAttribute="leading" constant="50" id="7gM-m1-iNf"/>
+                            <constraint firstItem="MB9-Pw-R8Z" firstAttribute="leading" secondItem="x9u-7K-LoO" secondAttribute="leading" constant="40" id="EM4-d8-76N"/>
+                            <constraint firstItem="x9u-7K-LoO" firstAttribute="bottom" secondItem="r8l-lh-4kw" secondAttribute="bottom" constant="30" id="Y7L-Hb-9GX"/>
+                            <constraint firstItem="x9u-7K-LoO" firstAttribute="trailing" secondItem="MB9-Pw-R8Z" secondAttribute="trailing" constant="40" id="bni-D0-fPa"/>
+                            <constraint firstItem="x9u-7K-LoO" firstAttribute="trailing" secondItem="r8l-lh-4kw" secondAttribute="trailing" constant="50" id="rj6-JB-3gq"/>
+                            <constraint firstItem="MB9-Pw-R8Z" firstAttribute="top" secondItem="x9u-7K-LoO" secondAttribute="top" constant="80" id="xJh-8Y-qq6"/>
+                            <constraint firstItem="CY3-fA-Hji" firstAttribute="leading" secondItem="x9u-7K-LoO" secondAttribute="leading" constant="50" id="zwr-vc-qdo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="x9u-7K-LoO"/>
                     </view>
                     <navigationItem key="navigationItem" id="sXg-Kg-adV"/>
+                    <connections>
+                        <outlet property="helpButton" destination="r8l-lh-4kw" id="tSR-Sg-4f4"/>
+                        <outlet property="startButton" destination="CY3-fA-Hji" id="2Ie-Av-kYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJS-dR-ZPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="67"/>
+            <point key="canvasLocation" x="123.75" y="66.549295774647888"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CFH-5E-sN5">
@@ -238,4 +270,7 @@
             <point key="canvasLocation" x="3020.625" y="64.436619718309856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="title.png" width="1000" height="500"/>
+    </resources>
 </document>
