@@ -11,8 +11,13 @@ import UIKit
 class ResultsViewController: UIViewController {
 
     override func viewDidLoad() {
+        genBo.layer.cornerRadius = 15
+        backBo.layer.cornerRadius = 15
         super.viewDidLoad()
     }
+    
+    @IBOutlet weak var genBo: UIButton!
+    @IBOutlet weak var backBo: UIButton!
     
     var totalTypes:Int = 1
     
@@ -62,9 +67,9 @@ class ResultsViewController: UIViewController {
     
     @IBAction func generateButton(_ sender: Any) {
         if(totalTypes == 1){
-            var totalValue:Int = 1
-            totalValue = chipQuantity1 * chipAmount1
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\nINDIVIDUAL VALUE: \(totalValue)"
+            var totalValue1:String = ""
+            totalValue1 = "@ $\(chipAmount1)"
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS @ \(totalValue1) EACH"
         }
         if(totalTypes == 2){
             var totalValue:Int = 1

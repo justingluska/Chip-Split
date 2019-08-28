@@ -11,15 +11,14 @@ import UIKit
 class ChipAmountViewController: UIViewController {
 
     override func viewDidLoad() {
-        
+        continueButton.layer.cornerRadius = 15
         super.viewDidLoad()
     }
     
     @IBOutlet weak var chipTypesLabel: UILabel!
+    @IBOutlet weak var continueButton: UIButton!
     
     var chipTypes: Int = 1
-    
-    
     
     @IBAction func chipTypesStepper(_ sender: UIStepper) {
         chipTypes = Int(sender.value)

@@ -15,6 +15,8 @@ class ChipTypeViewController: UIViewController {
         chipTypeNumberLabel.text = "Chip Type: \(chipNum) of \(totalTypes)"
         confirmChip.isHidden = false
         continueAd.isHidden = true
+        continueToAdO.layer.cornerRadius = 15
+        confirmChipO.layer.cornerRadius = 15
         if(chipNum == totalTypes){
             confirmChip.isHidden = true
             continueAd.isHidden = false
@@ -26,6 +28,9 @@ class ChipTypeViewController: UIViewController {
     @IBOutlet weak var nameInput: UITextField!
     @IBOutlet weak var valueSlid: UISlider!
     @IBOutlet weak var quantitySlid: UISlider!
+    
+    @IBOutlet weak var continueToAdO: UIButton!
+    @IBOutlet weak var confirmChipO: UIButton!
     
     func resetTypes(){
         nameInput.text = ""
@@ -109,11 +114,9 @@ class ChipTypeViewController: UIViewController {
             updateType()
             if(chipNum == 1){
                 chipName1 = "\(nameInput.text ?? "chip1")"
-                print(chipName1)
             }
             if(chipNum == 2){
                 chipName2 = "\(nameInput.text ?? "chip2")"
-                print(chipName2)
             }
             if(chipNum == 3){
                 chipName3 = "\(nameInput.text ?? "chip3")"
@@ -139,8 +142,15 @@ class ChipTypeViewController: UIViewController {
             }
             else{
                 if(chipNum == totalTypes){
+                    chipTypeNumberLabel.text = "Chip Type: \(chipNum) of \(totalTypes)"
+                    chipTypeNumberLabel.isHidden = true
                     confirmChip.isHidden = true
                     continueAd.isHidden = false
+                    nameInput.isHidden = true
+                    chipWorthLabel.isHidden = true
+                    valueSlid.isHidden = true
+                    chipAmountLabel.isHidden = true
+                    quantitySlid.isHidden = true
                 }
             }
         }
@@ -225,5 +235,7 @@ class ChipTypeViewController: UIViewController {
             vc?.chipQuantity8 = chipQuantity8
         }
     }
+    
+
     
 }
