@@ -68,23 +68,24 @@ class ResultsViewController: UIViewController {
     @IBAction func generateButton(_ sender: Any) {
         if(totalTypes == 1){
             var totalValue1:String = ""
-            totalValue1 = "@ $\(chipAmount1)"
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS @ \(totalValue1) EACH"
+            totalValue1 = "CHIPS @ $\(chipAmount1) EACH"
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) \(totalValue1)"
         }
         if(totalTypes == 2){
-            var totalValue:Int = 1
-            totalValue = chipQuantity1 * chipAmount1
-            totalValue = (totalValue) + chipQuantity2 * chipAmount2
-            totalValue = totalValue / tPl
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
+            var totalValue1:String = ""
+            totalValue1 = "CHIPS @ $\(chipAmount1) EACH"
+            var totalValue2:String = ""
+            totalValue2 = "CHIPS @ $\(chipAmount2) EACH"
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) \(totalValue1)\n\(chipQuantity2/tPl) \(chipName2.uppercased()) \(totalValue2)"
         }
         if(totalTypes == 3){
-            var totalValue:Int = 1
-            totalValue = chipQuantity1 * chipAmount1
-            totalValue = (totalValue) + chipQuantity2 * chipAmount2
-            totalValue = (totalValue) + chipQuantity3 * chipAmount3
-            totalValue = totalValue / tPl
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) CHIPS EACH\n\(chipQuantity2/tPl) \(chipName2.uppercased()) CHIPS EACH\n\(chipQuantity3/tPl) \(chipName3.uppercased()) CHIPS EACH \n\nINDIVIDUAL VALUE: $\(totalValue)"
+            var totalValue1:String = ""
+            totalValue1 = "CHIPS @ $\(chipAmount1) EACH"
+            var totalValue2:String = ""
+            totalValue2 = "CHIPS @ $\(chipAmount2) EACH"
+            var totalValue3:String = ""
+            totalValue3 = "CHIPS @ $\(chipAmount3) EACH"
+            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) \(totalValue1)\n\(chipQuantity2/tPl) \(chipName2.uppercased()) \(totalValue2)\n\(chipQuantity3/tPl) \(chipName3.uppercased()) \(totalValue3)"
         }
         if(totalTypes == 4){
             var totalValue:Int = 1
