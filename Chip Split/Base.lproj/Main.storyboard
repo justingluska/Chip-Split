@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0jP-p9-im5">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController storyboardIdentifier="Start" id="sn1-3f-ifa" customClass="StartViewController" customModule="Chip_Split" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wbm-is-zTU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="MB9-Pw-R8Z">
-                                <rect key="frame" x="40" y="168" width="334" height="178"/>
+                                <rect key="frame" x="40" y="144" width="240" height="178"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="178" id="r03-Vs-urU"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8l-lh-4kw">
-                                <rect key="frame" x="50" y="771" width="314" height="61"/>
+                                <rect key="frame" x="50" y="477" width="220" height="61"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="42"/>
                                 <state key="normal" title="Help">
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY3-fA-Hji">
-                                <rect key="frame" x="50" y="690" width="314" height="61"/>
+                                <rect key="frame" x="50" y="396" width="220" height="61"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="42"/>
                                 <state key="normal" title="Start">
@@ -76,14 +76,14 @@
             <objects>
                 <viewController id="CsY-gt-1P7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q56-TI-fzz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rules.png" translatesAutoresizingMaskIntoConstraints="NO" id="hzW-2M-6bN">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.23205377999999999" green="0.5" blue="0.33812326250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="hzW-2M-6bN" secondAttribute="trailing" id="44e-ol-iGg"/>
                             <constraint firstItem="hzW-2M-6bN" firstAttribute="leading" secondItem="q56-TI-fzz" secondAttribute="leading" id="Gac-Jp-EVg"/>
@@ -102,7 +102,7 @@
             <objects>
                 <navigationController id="0jP-p9-im5" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="DEl-sa-QG9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -118,23 +118,23 @@
             <objects>
                 <viewController storyboardIdentifier="ChipAmount" id="BYZ-38-t0r" customClass="ChipAmountViewController" customModule="Chip_Split" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chip Varieties" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcd-QD-NH9">
-                                <rect key="frame" x="45" y="133" width="324" height="47"/>
+                                <rect key="frame" x="45" y="109" width="230" height="47"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNh-43-YTg">
-                                <rect key="frame" x="115" y="289" width="184" height="58.666666666666686"/>
+                                <rect key="frame" x="115" y="265" width="90" height="58.5"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-Bv-K1d">
-                                <rect key="frame" x="30" y="785" width="354" height="47"/>
+                                <rect key="frame" x="30" y="491" width="260" height="47"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <state key="normal" title="Continue">
@@ -145,7 +145,7 @@
                                 </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="jHN-CR-YaU">
-                                <rect key="frame" x="160" y="210" width="94" height="29"/>
+                                <rect key="frame" x="113" y="186" width="94" height="29"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -183,27 +183,27 @@
             <objects>
                 <viewController storyboardIdentifier="ChipType" id="8vL-bm-zge" customClass="ChipTypeViewController" customModule="Chip_Split" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBs-yn-Vqr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Chip Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rbk-bh-9Uh">
-                                <rect key="frame" x="70" y="198" width="274" height="30"/>
+                                <rect key="frame" x="70" y="174" width="180" height="30"/>
                                 <color key="backgroundColor" red="0.80883519334129594" green="0.82501189720812185" blue="0.82501189720812185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-c8-DZC">
-                                <rect key="frame" x="38" y="395" width="338" height="31"/>
+                                <rect key="frame" x="38" y="371" width="244" height="31"/>
                                 <connections>
                                     <action selector="chipAmountChanged:" destination="8vL-bm-zge" eventType="valueChanged" id="9GR-wA-icG"/>
                                 </connections>
                             </slider>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2J-Sa-sjd">
-                                <rect key="frame" x="50" y="463" width="314" height="349"/>
+                                <rect key="frame" x="50" y="464" width="220" height="54"/>
                                 <color key="backgroundColor" red="0.7104616117" green="0.35328302709930903" blue="0.64157207514621739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
-                                <state key="normal" title="Continue To Ad">
+                                <state key="normal" title="Generate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -211,7 +211,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4um-Gd-FMZ">
-                                <rect key="frame" x="50" y="776" width="314" height="36"/>
+                                <rect key="frame" x="50" y="482" width="220" height="36"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
                                 <state key="normal" title="Confirm Chip">
@@ -222,25 +222,25 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UqK-g9-I3P">
-                                <rect key="frame" x="38" y="263" width="338" height="31"/>
+                                <rect key="frame" x="38" y="239" width="244" height="31"/>
                                 <connections>
                                     <action selector="chipWorthChanged:" destination="8vL-bm-zge" eventType="valueChanged" id="FVT-NL-DmC"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chip Type 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzN-TX-LZd">
-                                <rect key="frame" x="55" y="123" width="304" height="35"/>
+                                <rect key="frame" x="55" y="99" width="210" height="35"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value: $1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsT-80-fBI">
-                                <rect key="frame" x="35" y="298" width="344" height="27"/>
+                                <rect key="frame" x="35" y="274" width="250" height="27"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity: 2 Total Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s94-QQ-PyV">
-                                <rect key="frame" x="35" y="430" width="344" height="27"/>
+                                <rect key="frame" x="35" y="406" width="250" height="27"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -267,7 +267,7 @@
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="UqK-g9-I3P" secondAttribute="trailing" constant="40" id="ZAd-JT-Hnu"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="Rbk-bh-9Uh" secondAttribute="trailing" constant="70" id="aVl-WH-HPr"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="s94-QQ-PyV" secondAttribute="trailing" constant="35" id="ci5-i0-7ft"/>
-                            <constraint firstItem="V2J-Sa-sjd" firstAttribute="top" secondItem="u0X-i9-mqN" secondAttribute="top" constant="375" id="iOy-ZU-3f5"/>
+                            <constraint firstItem="V2J-Sa-sjd" firstAttribute="top" secondItem="u0X-i9-mqN" secondAttribute="top" constant="400" id="iOy-ZU-3f5"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="qjB-c8-DZC" secondAttribute="trailing" constant="40" id="jbR-iR-ErY"/>
                             <constraint firstItem="4um-Gd-FMZ" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="50" id="lYW-ZF-Pbt"/>
                             <constraint firstItem="WsT-80-fBI" firstAttribute="top" secondItem="UqK-g9-I3P" secondAttribute="bottom" constant="5" id="sE9-ZF-nlh"/>
@@ -298,17 +298,17 @@
             <objects>
                 <viewController storyboardIdentifier="Results" id="J9x-1o-OaH" customClass="ResultsViewController" customModule="Chip_Split" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uSx-uj-TkS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Players: 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Co-PH-LMm">
-                                <rect key="frame" x="70" y="198" width="274" height="28"/>
+                                <rect key="frame" x="70" y="174" width="180" height="28"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="hoO-jI-ErM">
-                                <rect key="frame" x="160" y="159" width="94" height="29"/>
+                                <rect key="frame" x="113" y="135" width="94" height="29"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -316,7 +316,7 @@
                                 </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-C3-WpO">
-                                <rect key="frame" x="90" y="256" width="234" height="36"/>
+                                <rect key="frame" x="90" y="232" width="140" height="36"/>
                                 <color key="backgroundColor" red="0.64313725489999995" green="0.043137254899999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
                                 <state key="normal" title="Generate">
@@ -327,13 +327,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chip Distribution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khG-oT-Bzb">
-                                <rect key="frame" x="10" y="74" width="394" height="35"/>
+                                <rect key="frame" x="10" y="50" width="300" height="35"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLK-Sh-Fcp">
-                                <rect key="frame" x="70" y="811" width="274" height="36"/>
+                                <rect key="frame" x="70" y="517" width="180" height="36"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
                                 <state key="normal" title="Back Home">
@@ -344,9 +344,9 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwr-NG-pFh">
-                                <rect key="frame" x="40" y="309" width="334" height="479"/>
+                                <rect key="frame" x="40" y="285" width="240" height="209"/>
                                 <color key="backgroundColor" red="0.40462184080000002" green="0.7104616117" blue="0.55719213700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -381,6 +381,7 @@
                         <outlet property="genBo" destination="v9t-C3-WpO" id="Nhd-CY-EJA"/>
                         <outlet property="results" destination="bwr-NG-pFh" id="SJd-R1-yn4"/>
                         <outlet property="stepper" destination="hoO-jI-ErM" id="a9j-v8-jGM"/>
+                        <outlet property="textOutputView" destination="bwr-NG-pFh" id="IUL-zY-C9d"/>
                         <outlet property="totalPlayers" destination="7Co-PH-LMm" id="dxQ-Ik-M5D"/>
                     </connections>
                 </viewController>
