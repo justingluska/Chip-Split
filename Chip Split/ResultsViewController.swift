@@ -98,7 +98,7 @@ class ResultsViewController: UIViewController {
             var totalValue3:String = ""
             totalValue3 = "CHIPS @ $\(chipAmount3) EACH"
             var totalValue4:String = ""
-            totalValue3 = "CHIPS @ $\(chipAmount4) EACH"
+            totalValue4 = "CHIPS @ $\(chipAmount4) EACH"
             results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) \(totalValue1)\n\(chipQuantity2/tPl) \(chipName2.uppercased()) \(totalValue2)\n\(chipQuantity3/tPl) \(chipName3.uppercased()) \(totalValue3)\n\(chipQuantity4/tPl) \(chipName4.uppercased()) \(totalValue4)"
         }
         if(totalTypes == 5){

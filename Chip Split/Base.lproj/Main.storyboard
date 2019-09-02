@@ -25,9 +25,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8l-lh-4kw">
-                                <rect key="frame" x="50" y="477" width="220" height="61"/>
+                                <rect key="frame" x="50" y="473" width="220" height="54"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="42"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="36"/>
                                 <state key="normal" title="Help">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY3-fA-Hji">
-                                <rect key="frame" x="50" y="396" width="220" height="61"/>
+                                <rect key="frame" x="50" y="392" width="220" height="61"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="42"/>
                                 <state key="normal" title="Start">
@@ -53,7 +53,7 @@
                             <constraint firstItem="x9u-7K-LoO" firstAttribute="trailing" secondItem="CY3-fA-Hji" secondAttribute="trailing" constant="50" id="6Xr-TM-BIB"/>
                             <constraint firstItem="r8l-lh-4kw" firstAttribute="leading" secondItem="x9u-7K-LoO" secondAttribute="leading" constant="50" id="7gM-m1-iNf"/>
                             <constraint firstItem="MB9-Pw-R8Z" firstAttribute="leading" secondItem="x9u-7K-LoO" secondAttribute="leading" constant="40" id="EM4-d8-76N"/>
-                            <constraint firstItem="x9u-7K-LoO" firstAttribute="bottom" secondItem="r8l-lh-4kw" secondAttribute="bottom" constant="30" id="Y7L-Hb-9GX"/>
+                            <constraint firstItem="CY3-fA-Hji" firstAttribute="top" secondItem="MB9-Pw-R8Z" secondAttribute="bottom" constant="70" id="OmU-R1-jsj"/>
                             <constraint firstItem="x9u-7K-LoO" firstAttribute="trailing" secondItem="MB9-Pw-R8Z" secondAttribute="trailing" constant="40" id="bni-D0-fPa"/>
                             <constraint firstItem="x9u-7K-LoO" firstAttribute="trailing" secondItem="r8l-lh-4kw" secondAttribute="trailing" constant="50" id="rj6-JB-3gq"/>
                             <constraint firstItem="MB9-Pw-R8Z" firstAttribute="top" secondItem="x9u-7K-LoO" secondAttribute="top" constant="80" id="xJh-8Y-qq6"/>
@@ -193,7 +193,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-c8-DZC">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-c8-DZC">
                                 <rect key="frame" x="38" y="371" width="244" height="31"/>
                                 <connections>
                                     <action selector="chipAmountChanged:" destination="8vL-bm-zge" eventType="valueChanged" id="9GR-wA-icG"/>
@@ -221,7 +221,7 @@
                                     <action selector="confirmNext:" destination="8vL-bm-zge" eventType="touchUpInside" id="EWW-1Z-MWy"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UqK-g9-I3P">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="UqK-g9-I3P">
                                 <rect key="frame" x="38" y="239" width="244" height="31"/>
                                 <connections>
                                     <action selector="chipWorthChanged:" destination="8vL-bm-zge" eventType="valueChanged" id="FVT-NL-DmC"/>
@@ -245,10 +245,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chips Locked!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH7-wO-PyW">
+                                <rect key="frame" x="30" y="114" width="260" height="24.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.23205377999999999" green="0.5" blue="0.33812326250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="V2J-Sa-sjd" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="50" id="0VU-PZ-F9u"/>
+                            <constraint firstItem="DH7-wO-PyW" firstAttribute="top" secondItem="u0X-i9-mqN" secondAttribute="top" constant="50" id="0ka-Ok-WRn"/>
                             <constraint firstItem="Rbk-bh-9Uh" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="70" id="3N4-Qf-1sU"/>
                             <constraint firstItem="UqK-g9-I3P" firstAttribute="top" secondItem="Rbk-bh-9Uh" secondAttribute="bottom" constant="35" id="3sQ-Zr-cKw"/>
                             <constraint firstItem="TzN-TX-LZd" firstAttribute="top" secondItem="u0X-i9-mqN" secondAttribute="top" constant="35" id="3vK-mp-3jF"/>
@@ -257,10 +264,12 @@
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="4um-Gd-FMZ" secondAttribute="trailing" constant="50" id="B4d-td-K6t"/>
                             <constraint firstItem="TzN-TX-LZd" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="55" id="Bar-ve-N3R"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="bottom" secondItem="4um-Gd-FMZ" secondAttribute="bottom" constant="50" id="CS5-Jr-d8B"/>
+                            <constraint firstItem="DH7-wO-PyW" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="30" id="Fqk-e0-mEW"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="bottom" secondItem="V2J-Sa-sjd" secondAttribute="bottom" constant="50" id="I6G-OL-8gM"/>
                             <constraint firstItem="s94-QQ-PyV" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="35" id="ICn-hK-ndf"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="TzN-TX-LZd" secondAttribute="trailing" constant="55" id="IS4-gk-Ysy"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="WsT-80-fBI" secondAttribute="trailing" constant="35" id="OGR-eG-jG0"/>
+                            <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="DH7-wO-PyW" secondAttribute="trailing" constant="30" id="Pe7-dl-No9"/>
                             <constraint firstItem="UqK-g9-I3P" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="40" id="QRs-xl-txH"/>
                             <constraint firstItem="s94-QQ-PyV" firstAttribute="top" secondItem="qjB-c8-DZC" secondAttribute="bottom" constant="5" id="Vpt-72-iMw"/>
                             <constraint firstItem="WsT-80-fBI" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="35" id="VsK-Vp-ZMh"/>
@@ -278,6 +287,7 @@
                     </view>
                     <connections>
                         <outlet property="chipAmountLabel" destination="s94-QQ-PyV" id="G1K-Hi-Bq6"/>
+                        <outlet property="chipDistLabel" destination="DH7-wO-PyW" id="RPj-U2-Wjx"/>
                         <outlet property="chipTypeNumberLabel" destination="TzN-TX-LZd" id="B7S-3L-aPv"/>
                         <outlet property="chipWorthLabel" destination="WsT-80-fBI" id="H2A-ox-JK8"/>
                         <outlet property="confirmChip" destination="4um-Gd-FMZ" id="P5B-c2-ytb"/>

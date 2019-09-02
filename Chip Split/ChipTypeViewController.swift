@@ -23,6 +23,15 @@ class ChipTypeViewController: UIViewController {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @IBOutlet weak var confirmChip: UIButton!
     @IBOutlet weak var continueAd: UIButton!
     @IBOutlet weak var nameInput: UITextField!
@@ -47,7 +56,7 @@ class ChipTypeViewController: UIViewController {
     }
     
     @IBAction func chipWorthChanged(_ sender: UISlider) {
-        var currentWorth:Int = Int(sender.value)
+        let currentWorth:Int = Int(sender.value)
         chipWorthLabel.text = "Value: $\(currentWorth)"
         if(chipNum == 1){
             chipAmount1 = currentWorth
@@ -76,7 +85,7 @@ class ChipTypeViewController: UIViewController {
     }
     
     @IBAction func chipAmountChanged(_ sender: UISlider) {
-        var currentAmount:Int = Int(sender.value)
+        let currentAmount:Int = Int(sender.value)
         chipAmountLabel.text = "Quantity: \(currentAmount) Total Chips"
         if(chipNum == 1){
             chipQuantity1 = currentAmount
@@ -142,6 +151,9 @@ class ChipTypeViewController: UIViewController {
             }
             else{
                 if(chipNum == totalTypes){
+                    if(chipNum > 1){
+                        chipDistLabel.isHidden = false
+                    }
                     chipTypeNumberLabel.text = "Chip Type: \(chipNum) of \(totalTypes)"
                     chipTypeNumberLabel.isHidden = true
                     confirmChip.isHidden = true
@@ -158,6 +170,7 @@ class ChipTypeViewController: UIViewController {
     
     var chipNum:Int = 1
     
+    @IBOutlet weak var chipDistLabel: UILabel!
     @IBOutlet weak var chipWorthLabel: UILabel!
     @IBOutlet weak var chipTypeNumberLabel: UILabel!
     @IBOutlet weak var chipAmountLabel: UILabel!
