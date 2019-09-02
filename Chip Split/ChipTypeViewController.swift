@@ -25,6 +25,8 @@ class ChipTypeViewController: UIViewController, UITextFieldDelegate {
         self.nameInput.delegate = self
     }
     
+    var totalTypes:Int = 2
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
     }
@@ -39,14 +41,13 @@ class ChipTypeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameInput: UITextField!
     @IBOutlet weak var valueSlid: UISlider!
     @IBOutlet weak var quantitySlid: UISlider!
-    
     @IBOutlet weak var continueToAdO: UIButton!
     @IBOutlet weak var confirmChipO: UIButton!
     
     func resetTypes(){
         nameInput.text = ""
         valueSlid.value = 1
-        quantitySlid.value = 1
+        quantitySlid.value = 2
         chipWorthLabel.text = "Value: $1"
         chipAmountLabel.text = "Quantity: 2 Total Chips"
     }
@@ -193,7 +194,7 @@ class ChipTypeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var chipTypeNumberLabel: UILabel!
     @IBOutlet weak var chipAmountLabel: UILabel!
     
-    var totalTypes:Int = 1
+    
     
     var chipName1:String = ""
     var chipAmount1:Int = 1

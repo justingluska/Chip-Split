@@ -21,7 +21,7 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var genBo: UIButton!
     @IBOutlet weak var backBo: UIButton!
     
-    var totalTypes:Int = 1
+    var totalTypes:Int = 2
     
     var chipName1:String = ""
     var chipAmount1:Int = 1
@@ -69,11 +69,6 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var results: UITextView!
     
     @IBAction func generateButton(_ sender: Any) {
-        if(totalTypes == 1){
-            var totalValue1:String = ""
-            totalValue1 = "CHIPS @ $\(chipAmount1) EACH"
-            results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) \(totalValue1)"
-        }
         if(totalTypes == 2){
             var totalValue1:String = ""
             totalValue1 = "CHIPS @ $\(chipAmount1) EACH"
@@ -165,7 +160,5 @@ class ResultsViewController: UIViewController {
             totalValue8 = "CHIPS @ $\(chipAmount8) EACH"
             results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) \(totalValue1)\n\(chipQuantity2/tPl) \(chipName2.uppercased()) \(totalValue2)\n\(chipQuantity3/tPl) \(chipName3.uppercased()) \(totalValue3)\n\(chipQuantity4/tPl) \(chipName4.uppercased()) \(totalValue4)\n\(chipQuantity5/tPl) \(chipName5.uppercased()) \(totalValue5)\n\(chipQuantity6/tPl) \(chipName6.uppercased()) \(totalValue6)\n\(chipQuantity7/tPl) \(chipName7.uppercased()) \(totalValue7)\n\(chipQuantity8/tPl) \(chipName8.uppercased()) \(totalValue8)"
         }
-        
     }
-
 }

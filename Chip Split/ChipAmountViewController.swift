@@ -18,7 +18,7 @@ class ChipAmountViewController: UIViewController {
     @IBOutlet weak var chipTypesLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     
-    var chipTypes: Int = 1
+    var chipTypes: Int = 2
     
     @IBAction func chipTypesStepper(_ sender: UIStepper) {
         chipTypes = Int(sender.value)
