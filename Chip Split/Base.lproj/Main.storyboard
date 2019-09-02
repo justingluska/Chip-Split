@@ -194,7 +194,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-c8-DZC">
-                                <rect key="frame" x="38" y="371" width="244" height="31"/>
+                                <rect key="frame" x="58" y="371" width="204" height="31"/>
                                 <connections>
                                     <action selector="chipAmountChanged:" destination="8vL-bm-zge" eventType="valueChanged" id="9GR-wA-icG"/>
                                 </connections>
@@ -222,7 +222,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="UqK-g9-I3P">
-                                <rect key="frame" x="38" y="239" width="244" height="31"/>
+                                <rect key="frame" x="58" y="239" width="204" height="31"/>
                                 <connections>
                                     <action selector="chipWorthChanged:" destination="8vL-bm-zge" eventType="valueChanged" id="FVT-NL-DmC"/>
                                 </connections>
@@ -260,7 +260,7 @@
                             <constraint firstItem="UqK-g9-I3P" firstAttribute="top" secondItem="Rbk-bh-9Uh" secondAttribute="bottom" constant="35" id="3sQ-Zr-cKw"/>
                             <constraint firstItem="TzN-TX-LZd" firstAttribute="top" secondItem="u0X-i9-mqN" secondAttribute="top" constant="35" id="3vK-mp-3jF"/>
                             <constraint firstItem="Rbk-bh-9Uh" firstAttribute="top" secondItem="TzN-TX-LZd" secondAttribute="bottom" constant="40" id="4ra-y0-Qcr"/>
-                            <constraint firstItem="qjB-c8-DZC" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="40" id="7IU-BO-vHC"/>
+                            <constraint firstItem="qjB-c8-DZC" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="60" id="7IU-BO-vHC"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="4um-Gd-FMZ" secondAttribute="trailing" constant="50" id="B4d-td-K6t"/>
                             <constraint firstItem="TzN-TX-LZd" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="55" id="Bar-ve-N3R"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="bottom" secondItem="4um-Gd-FMZ" secondAttribute="bottom" constant="50" id="CS5-Jr-d8B"/>
@@ -270,14 +270,14 @@
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="TzN-TX-LZd" secondAttribute="trailing" constant="55" id="IS4-gk-Ysy"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="WsT-80-fBI" secondAttribute="trailing" constant="35" id="OGR-eG-jG0"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="DH7-wO-PyW" secondAttribute="trailing" constant="30" id="Pe7-dl-No9"/>
-                            <constraint firstItem="UqK-g9-I3P" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="40" id="QRs-xl-txH"/>
+                            <constraint firstItem="UqK-g9-I3P" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="60" id="QRs-xl-txH"/>
                             <constraint firstItem="s94-QQ-PyV" firstAttribute="top" secondItem="qjB-c8-DZC" secondAttribute="bottom" constant="5" id="Vpt-72-iMw"/>
                             <constraint firstItem="WsT-80-fBI" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="35" id="VsK-Vp-ZMh"/>
-                            <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="UqK-g9-I3P" secondAttribute="trailing" constant="40" id="ZAd-JT-Hnu"/>
+                            <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="UqK-g9-I3P" secondAttribute="trailing" constant="60" id="ZAd-JT-Hnu"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="Rbk-bh-9Uh" secondAttribute="trailing" constant="70" id="aVl-WH-HPr"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="s94-QQ-PyV" secondAttribute="trailing" constant="35" id="ci5-i0-7ft"/>
                             <constraint firstItem="V2J-Sa-sjd" firstAttribute="top" secondItem="u0X-i9-mqN" secondAttribute="top" constant="400" id="iOy-ZU-3f5"/>
-                            <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="qjB-c8-DZC" secondAttribute="trailing" constant="40" id="jbR-iR-ErY"/>
+                            <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="qjB-c8-DZC" secondAttribute="trailing" constant="60" id="jbR-iR-ErY"/>
                             <constraint firstItem="4um-Gd-FMZ" firstAttribute="leading" secondItem="u0X-i9-mqN" secondAttribute="leading" constant="50" id="lYW-ZF-Pbt"/>
                             <constraint firstItem="WsT-80-fBI" firstAttribute="top" secondItem="UqK-g9-I3P" secondAttribute="bottom" constant="5" id="sE9-ZF-nlh"/>
                             <constraint firstItem="u0X-i9-mqN" firstAttribute="trailing" secondItem="V2J-Sa-sjd" secondAttribute="trailing" constant="50" id="u4d-nL-wBg"/>

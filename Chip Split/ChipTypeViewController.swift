@@ -13,6 +13,7 @@ class ChipTypeViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         chipTypeNumberLabel.text = "Chip Type: \(chipNum) of \(totalTypes)"
+        chipTypeNumberLabel.backgroundColor = UIColor.gray
         confirmChip.isHidden = false
         continueAd.isHidden = true
         continueToAdO.layer.cornerRadius = 15
@@ -52,6 +53,22 @@ class ChipTypeViewController: UIViewController, UITextFieldDelegate {
     
     func updateType(){
         if(chipNum < 9){
+            let temp = Int.random(in: 0 ..< 4)
+            if(temp == 0){
+                chipTypeNumberLabel.backgroundColor = UIColor.red
+            }
+            else if(temp == 1){
+                chipTypeNumberLabel.backgroundColor = UIColor.purple
+            }
+            else if(temp == 2){
+                chipTypeNumberLabel.backgroundColor = UIColor.green
+            }
+            else if(temp == 3){
+                chipTypeNumberLabel.backgroundColor = UIColor.cyan
+            }
+            else if(temp == 4){
+                chipTypeNumberLabel.backgroundColor = UIColor.orange
+            }
             chipTypeNumberLabel.text = "Chip Type: \(chipNum + 1) of \(totalTypes)"
         }
     }
