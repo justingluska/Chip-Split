@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChipTypeViewController: UIViewController {
+class ChipTypeViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,7 @@ class ChipTypeViewController: UIViewController {
             confirmChip.isHidden = true
             continueAd.isHidden = false
         }
+        self.nameInput.delegate = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -28,7 +29,7 @@ class ChipTypeViewController: UIViewController {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        nameInput.resignFirstResponder()
         return true
     }
     

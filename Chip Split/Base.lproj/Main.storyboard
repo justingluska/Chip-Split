@@ -191,7 +191,7 @@
                                 <color key="backgroundColor" red="0.80883519334129594" green="0.82501189720812185" blue="0.82501189720812185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-c8-DZC">
                                 <rect key="frame" x="38" y="371" width="244" height="31"/>
