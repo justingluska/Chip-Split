@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="137" y="852"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home Navigation Controller-->
         <scene sceneID="CFH-5E-sN5">
             <objects>
-                <navigationController id="0jP-p9-im5" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationController" id="0jP-p9-im5" customClass="HomeNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="DEl-sa-QG9">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -350,7 +350,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0jP-p9-im5" kind="show" id="mYk-Ds-qK5"/>
+                                    <action selector="backHomeButton:" destination="J9x-1o-OaH" eventType="touchUpInside" id="vcN-ja-dEu"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwr-NG-pFh">
