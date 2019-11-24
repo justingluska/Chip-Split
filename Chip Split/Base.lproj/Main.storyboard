@@ -99,6 +99,7 @@
         <scene sceneID="CFH-5E-sN5">
             <objects>
                 <navigationController storyboardIdentifier="HomeNavigationController" id="0jP-p9-im5" customClass="HomeNavigationController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3PM-1L-vHq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="DEl-sa-QG9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -144,7 +145,6 @@
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="jHN-CR-YaU">
                                 <rect key="frame" x="160" y="178" width="94" height="32"/>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="chipTypesStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="9Vb-ce-tGF"/>
@@ -193,13 +193,15 @@
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-c8-DZC">
                                 <rect key="frame" x="58" y="367" width="298" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.54106519669999997" green="0.039286273300000001" blue="0.1517567997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="chipAmountChanged:" destination="8vL-bm-zge" eventType="valueChanged" id="9GR-wA-icG"/>
                                 </connections>
                             </slider>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2J-Sa-sjd">
                                 <rect key="frame" x="50" y="456" width="314" height="302"/>
-                                <color key="backgroundColor" red="0.7104616117" green="0.35328302709930903" blue="0.64157207514621739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
                                 <state key="normal" title="Generate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -221,6 +223,8 @@
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="UqK-g9-I3P">
                                 <rect key="frame" x="58" y="235" width="298" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.54106519669999997" green="0.039286273300000001" blue="0.1517567997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="chipWorthChanged:" destination="8vL-bm-zge" eventType="valueChanged" id="FVT-NL-DmC"/>
                                 </connections>
@@ -283,6 +287,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u0X-i9-mqN"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ffG-x1-Uq7"/>
                     <connections>
                         <outlet property="chipAmountLabel" destination="s94-QQ-PyV" id="G1K-Hi-Bq6"/>
                         <outlet property="chipDistLabel" destination="DH7-wO-PyW" id="RPj-U2-Wjx"/>
@@ -317,7 +322,6 @@
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="hoO-jI-ErM">
                                 <rect key="frame" x="160" y="115" width="94" height="32"/>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="stepperClicked:" destination="J9x-1o-OaH" eventType="valueChanged" id="TMP-yn-atg"/>
@@ -325,7 +329,7 @@
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-C3-WpO">
                                 <rect key="frame" x="90" y="215" width="234" height="36"/>
-                                <color key="backgroundColor" red="0.64313725489999995" green="0.043137254899999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.54106519670050757" green="0.039286273295435999" blue="0.15175679966084418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
                                 <state key="normal" title="Generate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -340,19 +344,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLK-Sh-Fcp">
-                                <rect key="frame" x="70" y="757" width="274" height="36"/>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.25098039220000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
-                                <state key="normal" title="Back Home">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="backHomeButton:" destination="J9x-1o-OaH" eventType="touchUpInside" id="vcN-ja-dEu"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwr-NG-pFh">
-                                <rect key="frame" x="40" y="268" width="334" height="466"/>
+                                <rect key="frame" x="40" y="268" width="334" height="515"/>
                                 <color key="backgroundColor" red="0.40462184080000002" green="0.7104616117" blue="0.55719213700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -362,30 +355,26 @@
                         <constraints>
                             <constraint firstItem="v9t-C3-WpO" firstAttribute="top" secondItem="7Co-PH-LMm" secondAttribute="bottom" constant="30" id="0Yl-pm-aiQ"/>
                             <constraint firstItem="khG-oT-Bzb" firstAttribute="leading" secondItem="cZb-FR-rTi" secondAttribute="leading" constant="10" id="4bY-7I-hFx"/>
-                            <constraint firstItem="bLK-Sh-Fcp" firstAttribute="top" secondItem="bwr-NG-pFh" secondAttribute="bottom" constant="23" id="4rH-bC-BA6"/>
-                            <constraint firstItem="bLK-Sh-Fcp" firstAttribute="leading" secondItem="cZb-FR-rTi" secondAttribute="leading" constant="70" id="6hy-vA-uyH"/>
                             <constraint firstItem="v9t-C3-WpO" firstAttribute="leading" secondItem="cZb-FR-rTi" secondAttribute="leading" constant="90" id="8ti-nB-Ode"/>
                             <constraint firstItem="cZb-FR-rTi" firstAttribute="trailing" secondItem="v9t-C3-WpO" secondAttribute="trailing" constant="90" id="Dxz-wH-LLb"/>
                             <constraint firstItem="7Co-PH-LMm" firstAttribute="leading" secondItem="cZb-FR-rTi" secondAttribute="leading" constant="70" id="Fdm-fa-bkN"/>
                             <constraint firstItem="bwr-NG-pFh" firstAttribute="top" secondItem="v9t-C3-WpO" secondAttribute="bottom" constant="17" id="IQc-YV-17C"/>
                             <constraint firstItem="cZb-FR-rTi" firstAttribute="trailing" secondItem="khG-oT-Bzb" secondAttribute="trailing" constant="10" id="Q2f-Bn-kOY"/>
                             <constraint firstItem="cZb-FR-rTi" firstAttribute="trailing" secondItem="7Co-PH-LMm" secondAttribute="trailing" constant="70" id="QQr-Wk-ZcI"/>
-                            <constraint firstItem="cZb-FR-rTi" firstAttribute="bottom" secondItem="bLK-Sh-Fcp" secondAttribute="bottom" constant="15" id="Yo3-46-uTZ"/>
                             <constraint firstItem="khG-oT-Bzb" firstAttribute="top" secondItem="cZb-FR-rTi" secondAttribute="top" constant="30" id="agx-r4-stL"/>
                             <constraint firstItem="hoO-jI-ErM" firstAttribute="centerX" secondItem="uSx-uj-TkS" secondAttribute="centerX" id="hfL-Bu-CRL"/>
                             <constraint firstItem="cZb-FR-rTi" firstAttribute="trailing" secondItem="bwr-NG-pFh" secondAttribute="trailing" constant="40" id="jkj-8t-9NC"/>
                             <constraint firstItem="cZb-FR-rTi" firstAttribute="trailing" secondItem="khG-oT-Bzb" secondAttribute="trailing" constant="10" id="jwg-3a-sZK"/>
                             <constraint firstItem="hoO-jI-ErM" firstAttribute="top" secondItem="khG-oT-Bzb" secondAttribute="bottom" constant="50" id="lKJ-IR-lrd"/>
+                            <constraint firstItem="cZb-FR-rTi" firstAttribute="bottom" secondItem="bwr-NG-pFh" secondAttribute="bottom" constant="25" id="pAm-iu-2E5"/>
                             <constraint firstItem="bwr-NG-pFh" firstAttribute="leading" secondItem="cZb-FR-rTi" secondAttribute="leading" constant="40" id="qxU-NG-Pgs"/>
                             <constraint firstItem="khG-oT-Bzb" firstAttribute="leading" secondItem="cZb-FR-rTi" secondAttribute="leading" constant="10" id="rw3-vj-nak"/>
-                            <constraint firstItem="cZb-FR-rTi" firstAttribute="trailing" secondItem="bLK-Sh-Fcp" secondAttribute="trailing" constant="70" id="umk-z7-XUB"/>
                             <constraint firstItem="7Co-PH-LMm" firstAttribute="top" secondItem="hoO-jI-ErM" secondAttribute="bottom" constant="10" id="wkG-R6-9jo"/>
                             <constraint firstItem="khG-oT-Bzb" firstAttribute="top" secondItem="cZb-FR-rTi" secondAttribute="top" constant="30" id="yHM-gL-Woc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cZb-FR-rTi"/>
                     </view>
                     <connections>
-                        <outlet property="backBo" destination="bLK-Sh-Fcp" id="omu-kM-zzY"/>
                         <outlet property="genBo" destination="v9t-C3-WpO" id="Nhd-CY-EJA"/>
                         <outlet property="results" destination="bwr-NG-pFh" id="SJd-R1-yn4"/>
                         <outlet property="stepper" destination="hoO-jI-ErM" id="a9j-v8-jGM"/>

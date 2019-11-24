@@ -12,7 +12,7 @@ class ResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         genBo.layer.cornerRadius = 15
-        backBo.layer.cornerRadius = 15
+        // backBo.layer.cornerRadius = 15
         textOutputView.layer.cornerRadius = 15
         textOutputView.clipsToBounds = true
         super.viewDidLoad()
@@ -161,9 +161,11 @@ class ResultsViewController: UIViewController {
             results.text = "\(chipQuantity1/tPl) \(chipName1.uppercased()) \(totalValue1)\n\(chipQuantity2/tPl) \(chipName2.uppercased()) \(totalValue2)\n\(chipQuantity3/tPl) \(chipName3.uppercased()) \(totalValue3)\n\(chipQuantity4/tPl) \(chipName4.uppercased()) \(totalValue4)\n\(chipQuantity5/tPl) \(chipName5.uppercased()) \(totalValue5)\n\(chipQuantity6/tPl) \(chipName6.uppercased()) \(totalValue6)\n\(chipQuantity7/tPl) \(chipName7.uppercased()) \(totalValue7)\n\(chipQuantity8/tPl) \(chipName8.uppercased()) \(totalValue8)"
         }
     }
-    @IBAction func backHomeButton(_ sender: Any) {
-        let HomeNavigationController = self.storyboard?.instantiateViewController(withIdentifier: "HomeNavigationController") as! UINavigationController
-        HomeNavigationController.modalTransitionStyle = .crossDissolve
-        self.present(HomeNavigationController, animated: true)
-    }
+//    @IBAction func backHomeButton(_ sender: Any) {
+//        let HomeNavigationController = self.storyboard?.instantiateViewController(withIdentifier: "HomeNavigationController") as! UINavigationController
+//        HomeNavigationController.modalTransitionStyle = .crossDissolve
+//        self.present(HomeNavigationController, animated: true)
+//    }
+//
+    
 }
